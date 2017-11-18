@@ -11,18 +11,13 @@ public class BaseControl {
 	
 	private static final Logger logger = LoggerFactory.getLogger(BaseControl.class);
 	
-	@Value("${spring.resources.static-locations}")
-	private String profileActive;
-	
 	@RequestMapping("/index")
 	public String index() {
-		logger.info("check is profileActive ---"+profileActive);
 		return "/index";
 	}
 	
 	@RequestMapping("/signin")
 	public String signin() {
-		logger.info("check is profileActive ---"+profileActive);
 		return "/signin";
 	}
 	

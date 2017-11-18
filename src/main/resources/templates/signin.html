@@ -8,22 +8,22 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <link rel="icon" href="../image/favicon.ico"/>
+    <link rel="icon" th:href="@{/image/favicon.ico}"/>
 
     <title>Signin Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+    <link th:href="@{/assets/css/ie10-viewport-bug-workaround.css}" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
-    <link href="../css/signin.css" rel="stylesheet"/>
+    <link th:href="@{/css/signin.css}" rel="stylesheet"/>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
+    <script th:src="@{/assets/js/ie-emulation-modes-warning.js}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -54,6 +54,6 @@
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script th:src="@{/assets/js/ie10-viewport-bug-workaround.js}"></script>
   </body>
 </html>

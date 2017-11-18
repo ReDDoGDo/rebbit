@@ -16,7 +16,7 @@ public class DefaultConfigurerAdapter extends WebMvcConfigurerAdapter{
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		logger.info("start set Default View Path");
-        registry.addViewController("/").setViewName("forward:/index");
+        registry.addViewController("/").setViewName("redirect:/index");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
         super.addViewControllers(registry);
     }
